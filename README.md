@@ -48,3 +48,51 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+STEPS DONE FOR THE BASIC SETUP
+cd apps/mobile
+npm add expo-router
+Already done.
+
+Done
+npm add react-native-safe-area-context react-native-screens
+
+Enable Expo Router
+Update app.json
+Made sure apps/mobile/app.json includes:
+
+{
+  "expo": {
+    "name": "app name",
+    "slug": "app name",
+    "scheme": "scheme name",
+    "plugins": ["expo-router"],
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    }
+  }
+}
+
+Update Entry Point
+Open apps/mobile/package.json and set:
+{
+  ...
+  "main": "expo-router/entry"
+  ...
+}
+
+This tells Expo to use file-based routing.
+
+
+Then create these files:
+app/
+├─ _layout.tsx
+├─ index.tsx → main screen (core action)
+├─ login.tsx
+├─ signup.tsx
+├─ paywall.tsx
+└─ settings.tsx
+
+Defined the Root Layout in apps/mobile/app/_layout.tsx:

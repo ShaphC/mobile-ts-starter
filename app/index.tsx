@@ -1,5 +1,6 @@
 import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { Button, Text, View } from "react-native";
+import { logout } from "../lib/auth/logout";
 
 export default function Home() {
   
@@ -37,6 +38,8 @@ export default function Home() {
       <Link href="/settings">
         <Text style={{ color: "blue" }}>Go to Settings</Text>
       </Link>
+
+      <Button title="Log out" onPress={logout} />
     </View>
   );
 }

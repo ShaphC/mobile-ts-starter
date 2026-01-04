@@ -1,9 +1,10 @@
-import { Text, View } from "react-native";
+import { AuthLayout } from "../ui/auth/AuthLayout";
+import { LoginForm } from "../ui/auth/LoginForm";
 
-export default function Login() {
+export default function LoginScreen() {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Login</Text>
-    </View>
+    <AuthLayout title="Log in">
+      <LoginForm />
+    </AuthLayout>
   );
 }

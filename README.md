@@ -99,3 +99,6 @@ Defined the Root Layout in apps/mobile/app/_layout.tsx:
 
 Added @supabase/supabase-js
 npm add @supabase/supabase-js
+
+Learned that EXPO_PUBLIC_... is needed to expose the env
+variables

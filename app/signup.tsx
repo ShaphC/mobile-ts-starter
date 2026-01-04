@@ -1,9 +1,10 @@
-import { Text, View } from "react-native";
+import { AuthLayout } from "../ui/auth/AuthLayout";
+import { SignupForm } from "../ui/auth/SigupForm";
 
-export default function Signup() {
+export default function SignupScreen() {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Sign Up</Text>
-    </View>
+    <AuthLayout title="Sign up">
+      <SignupForm />
+    </AuthLayout>
   );
 }

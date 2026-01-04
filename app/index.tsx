@@ -2,6 +2,22 @@ import { Link } from "expo-router";
 import { Text, View } from "react-native";
 
 export default function Home() {
+  
+  // THE IS TO TEST THE SUPABASE CONNECTION AND .ENV
+  // useEffect(() => {
+  //   const run = async () => {
+  //     await signIn(
+  //       process.env.EXPO_PUBLIC_TEST_EMAIL!,
+  //       process.env.EXPO_PUBLIC_TEST_PASSWORD!
+  //     );
+
+  //     const session = await getSession();
+  //     console.log("SESSION:", session?.user.email);
+  //   };
+
+  //   run();
+  // }, []);
+
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center", gap: 12 }}>
       <Text>Main App Screen</Text>

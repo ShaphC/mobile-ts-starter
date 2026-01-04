@@ -96,3 +96,6 @@ app/
 └─ settings.tsx
 
 Defined the Root Layout in apps/mobile/app/_layout.tsx:
+
+Added @supabase/supabase-js
+npm add @supabase/supabase-js
